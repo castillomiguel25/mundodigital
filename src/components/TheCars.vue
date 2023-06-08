@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
+    <div class="container bg-dark">
       <div class="row">
-        <div class="col-md-6 col-lg-3 mt-5" v-for="card in cards" :key="card.id">
+        <div class="col-md-6 col-lg-3 mt-5 mb-5" v-for="card in cards" :key="card.id">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">{{ card.title }}</h5>
@@ -51,6 +51,9 @@
   </script>
   
   <style scoped>
+.bg-dark{
+  background: black;
+}
 .btn-products{
   color: white;
   background: #14C582;
