@@ -1,13 +1,72 @@
 <template>
   <div class="container">
-    <div class="row mb-5">
-      <div class="col-12 px-5">
-        <h3 class="mt-5 text-center">lalala</h3>
-        <p class="text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit distinctio commodi
-          aliquid pariatur cum quas facilis? Beatae laborum, corrupti ex laboriosam quas sint
-          minima, possimus reprehenderit vitae incidunt, placeat odio!
+    <div class="row">
+      <div class="col-12 text-center mt-5">
+        <h1>
+          Selecciona el Servicio que Deseas!
+        </h1>
+      </div>
+    </div>
+
+    <!-- one page -->
+    <div class="row">
+      <div class="col-lg-6 col-12 text-center px-5 mt-5">
+        <h3>Simple & Atractivo</h3>
+        <h1>ONE PAGE</h1>
+        <p>
+          Si quieres que tu negocio esté en Internet, puedes hacerlo a través de una one page. Así,
+          exhibirás de manera atractiva y ordenada la información que necesites mostrar. ¡Genera
+          tráfico a tu sitio web y así conseguirás más leads!
         </p>
+
+        <router-link to="/init">
+          <button class="btn-join-home">Solicitar ahora</button>
+        </router-link>
+      </div>
+      <div class="col-6 text-left px-5 mt-3">
+        <img class="img-presentation" src="../assets/lapto.webp" alt="section-img" />
+      </div>
+    </div>
+
+    <!-- corparation -->
+    
+    <div class="row text-center">
+      <div class="col-lg-6 col-12 text-left px-5 mt-3">
+        <img class="img-presentation" src="../assets/web-corporativa.png" alt="section-img" />
+      </div>
+      <div class="col-lg-6 col-12 px-5 mt-5">
+        <h3>Simple & Atractivo</h3>
+        <h1>ONE PAGE</h1>
+        <p>
+          Si quieres que tu negocio esté en Internet, puedes hacerlo a través de una one page. Así,
+          exhibirás de manera atractiva y ordenada la información que necesites mostrar. ¡Genera
+          tráfico a tu sitio web y así conseguirás más leads!
+        </p>
+
+        <router-link to="/init">
+          <button class="btn-join-home">Solicitar ahora</button>
+        </router-link>
+      </div>
+    </div>
+
+    <!-- E-COMMERCE -->
+
+    <div class="row text-center">
+      <div class="col-lg-6 col-12 px-5 mt-5 mb-5">
+        <h3>Simple & Atractivo</h3>
+        <h1>ONE PAGE</h1>
+        <p>
+          Si quieres que tu negocio esté en Internet, puedes hacerlo a través de una one page. Así,
+          exhibirás de manera atractiva y ordenada la información que necesites mostrar. ¡Genera
+          tráfico a tu sitio web y así conseguirás más leads!
+        </p>
+
+        <router-link to="/init">
+          <button class="btn-join-home">Solicitar ahora</button>
+        </router-link>
+      </div>
+      <div class="col-6 text-left px-5 mt-3">
+        <img class="img-presentation" src="../assets/E-Commerce.png" alt="section-img" />
       </div>
     </div>
   </div>
@@ -20,5 +79,9 @@ export default {
 </script>
 
 <style>
-
+@media screen and (max-width: 600px) {
+.img-presentation{
+  display: none;
+}
+}
 </style>

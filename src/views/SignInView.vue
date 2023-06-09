@@ -1,4 +1,5 @@
 <template>
+  <TheHeader />
   <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-lg-4">
@@ -55,7 +56,11 @@
 </template>
 
 <script>
+import TheHeader from '../components/TheHeader.vue'
 export default {
+  components: {
+    TheHeader
+  },
   data() {
     return {
       username: '',
