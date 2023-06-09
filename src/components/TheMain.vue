@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <div class="row text-center">
-      <div class="col-6 px-5 mt-5">
+    <div class="row t">
+      <div class="col-12 col-lg-6 col-md-6 px-5 mt-5 ext-center">
         <h1 class="txt"><strong>Mundo Digital</strong></h1>
         <h3>COMIENZA HOY</h3>
         <h2 class="text-commerce"><strong>¡Diseñamos tu Sitio Web!</strong></h2>
@@ -20,7 +20,7 @@
           <button class="btn-join-home">Solicitar ahora</button>
         </router-link>
       </div>
-      <div class="col-6 text-left px-5 mt-5">
+      <div class="col-12 col-lg-6 col-md-6 text-left px-5 mt-5">
         <img class="img-presentation" src="../assets/principal.png" alt="initial" />
       </div>
     </div>
@@ -40,6 +40,12 @@ export default {
 </script>
 
 <style>
+@media screen and (max-width: 600px) {
+.img-presentation{
+  display: none;
+}
+}
+
 .txt {
   background: -webkit-linear-gradient(0deg, #14c582, black, #14c581a4);
   -webkit-background-clip: text;
