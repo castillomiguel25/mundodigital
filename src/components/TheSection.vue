@@ -29,7 +29,7 @@
     <!-- corparation -->
 
     <div class="row text-center">
-      <div class="col-lg-6 col-12 text-left px-5">
+      <div class="col-lg-6 col-12 text-left px-5 d-none d-lg-block">
         <img class="img-section" src="../assets/web-corporativa.png" alt="section-img" />
       </div>
       <div class="col-lg-6 col-12 px-5 mt-5">
@@ -41,6 +41,10 @@
           En nuestra agencia de diseño web, creamos sitios web personalizados y profesionales que
           reflejan la identidad y los valores de tu empresa.
         </p>
+
+        <div class="col-lg-6 col-12 text-left px-5 none">
+          <img class="img-section" src="../assets/web-corporativa.png" alt="section-img" />
+        </div>
 
         <router-link to="/init">
           <button class="btn-join-home">Solicitar ahora</button>
@@ -56,11 +60,12 @@
         <h1>Tienda En-Linea</h1>
         <p>
           ¡Abre las puertas de tu negocio en línea con una tienda virtual WooCommerce de alto
-          rendimiento! <br> Tenemos desde la configuración inicial hasta la integración de pasarelas de
-          pago seguras y la optimización del catálogo de productos, nos encargamos de todos los
-          aspectos técnicos para que puedas concentrarte en hacer crecer tu negocio. Ofrecemos
-          diseños atractivos, una experiencia de compra intuitiva y funcionalidades avanzadas que
-          harán que tus clientes vuelvan una y otra vez.
+          rendimiento! <br />
+          Tenemos desde la configuración inicial hasta la integración de pasarelas de pago seguras y
+          la optimización del catálogo de productos, nos encargamos de todos los aspectos técnicos
+          para que puedas concentrarte en hacer crecer tu negocio. Ofrecemos diseños atractivos, una
+          experiencia de compra intuitiva y funcionalidades avanzadas que harán que tus clientes
+          vuelvan una y otra vez.
         </p>
 
         <router-link to="/init">
@@ -84,6 +89,11 @@ export default {
 .img-section {
   height: 500px;
   width: 500px;
+}
+@media screen and (min-width: 1024px) {
+  .none {
+    display: none;
+  }
 }
 @media screen and (max-width: 600px) {
   .img-section {
